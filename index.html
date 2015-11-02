@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="calculator.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="calculator.js">
+    </script>
+
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="page-main">
+        <div class="container">
+
+          <section id="main" class="main">
+            <div class="content">
+
+              <div class="calculator">
+                <form action="#">
+                  <fieldset class="display">
+                    <input type="text" name="display" value="0" />
+                  </fieldset>
+                  <fieldset class="numbers">
+                    <button class="key number" value="0">0</button>
+                    <button class="key number" value="1">1</button>
+                    <button class="key number" value="2">2</button>
+                    <button class="key number" value="3">3</button>
+                    <button class="key number" value="4">4</button>
+                    <button class="key number" value="5">5</button>
+                    <button class="key number" value="6">6</button>
+                    <button class="key number" value="7">7</button>
+                    <button class="key number" value="8">8</button>
+                    <button class="key number" value="9">9</button>
+                  </fieldset>
+                  <fieldset class="operators">
+                    <button class="key operator" value="/">/</button>
+                    <button class="key operator" value="*">*</button>
+                    <button class="key operator" value="-">-</button>
+                    <button class="key operator" value="+">+</button>
+                    <button class="key operator large" value="=">=</button>
+                    <button class="key clear large" value="clear">C</button>
+                  </fieldset>
+                </form>
+              </div>
+
+            </div>
+          </section>
+        </div>
+      </div><!-- /page-main -->
+
+    </div><!-- /page -->
+
+    <script type="text/javascript">
+     $( document ).ready(function() {
+       var calculator = new Calculator();
+       calculator.init();
+
+
+     });
+    </script>
+
+  </body>
+</html>
